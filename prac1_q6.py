@@ -10,7 +10,6 @@ def chunks(vector,size):
     reverse_chunk_list = []
     for i in range(0, len(vector), size):
         reverse_chunk_list.append(vector[i:i+size])
-    print("The chunks are ", reverse_chunk_list)
     reverse_chunk_list.sort(reverse=True)
     reverse_chunk_list = list(itertools.chain.from_iterable(reverse_chunk_list))
     return reverse_chunk_list
